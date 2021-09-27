@@ -12,7 +12,7 @@ from googlesearch import search
 """
 def googleSearch(query):
     cacheProvider = "http://webcache.googleusercontent.com/search?q=cache:"
-    for j in search(query, tld="co.in", num=0, stop=150, pause=2):
+    for j in search(query, tld="co.in", num=20, stop=200, pause=2):
         print(cacheProvider + j)
 
 
